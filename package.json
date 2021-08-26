@@ -7,7 +7,10 @@
     "frontend-install": "npm i --prefix controller-overlay-core",
     "frontend-dev": "npm start --prefix controller-overlay-core",
     "frontend-build": "npm run build --prefix controller-overlay-core",
-    "tauri": "tauri"
+    "tauri": "tauri",
+    "debug": "RUST_DEBUG=1 tauri dev",
+    "dev": "npm run tauri dev",
+    "debug-build": "npm run tauri build -- --debug"
   },
   "repository": {
     "type": "git",
@@ -22,5 +25,8 @@
   "homepage": "https://github.com/dowinterfor6/controller-overlay#readme",
   "devDependencies": {
     "@tauri-apps/cli": "^1.0.0-beta.10"
+  },
+  "dependencies": {
+    "@tauri-apps/api": "^1.0.0-beta.8"
   }
 }
