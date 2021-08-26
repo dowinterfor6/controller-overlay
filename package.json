@@ -4,7 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "frontend-install": "npm i --prefix controller-overlay-core",
+    "frontend-dev": "npm start --prefix controller-overlay-core",
+    "frontend-build": "npm run build --prefix controller-overlay-core",
+    "tauri": "tauri"
   },
   "repository": {
     "type": "git",
@@ -16,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/dowinterfor6/controller-overlay/issues"
   },
-  "homepage": "https://github.com/dowinterfor6/controller-overlay#readme"
+  "homepage": "https://github.com/dowinterfor6/controller-overlay#readme",
+  "devDependencies": {
+    "@tauri-apps/cli": "^1.0.0-beta.10"
+  }
 }
