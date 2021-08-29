@@ -1,32 +1,26 @@
 {
   "package": {
     "productName": "Controller Overlay",
-    "version": "0.1.0"
+    "version": "0.1.3"
   },
   "build": {
     "distDir": "../controller-overlay-core/build",
     "devPath": "http://localhost:3000/",
-    "beforeDevCommand": "",
-    "beforeBuildCommand": ""
+    "beforeDevCommand": "npm run frontend-dev",
+    "beforeBuildCommand": "npm run frontend-build"
   },
   "tauri": {
     "bundle": {
       "active": true,
-      "targets": "all",
-      "identifier": "com.tauri.dev",
-      "icon": [
-        "icons/32x32.png",
-        "icons/128x128.png",
-        "icons/128x128@2x.png",
-        "icons/icon.icns",
-        "icons/icon.ico"
-      ],
+      "targets": "msi",
+      "identifier": "io.github.dowinterfor6.controller-overlay",
+      "icon": ["icons/icon.ico"],
       "resources": [],
       "externalBin": [],
       "copyright": "",
-      "category": "DeveloperTool",
-      "shortDescription": "",
-      "longDescription": "",
+      "category": "Utility",
+      "shortDescription": "A controller overlay application",
+      "longDescription": "A controller overlay application that displays button presses and joystick movement. Allows for theme customization via presets and custom background color for chroma keying.",
       "deb": {
         "depends": [],
         "useBootstrapper": false
@@ -54,8 +48,8 @@
     "windows": [
       {
         "title": "Controller Overlay",
-        "width": 800,
-        "height": 600,
+        "width": 600,
+        "height": 420,
         "resizable": true,
         "fullscreen": false
       }

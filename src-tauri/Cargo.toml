@@ -1,8 +1,8 @@
 [package]
-name = "app"
+name = "Controller Overlay"
 version = "0.1.0"
-description = "A Tauri App"
-authors = ["you"]
+description = "A controller overlay application that displays button presses and joystick movement. Allows for theme customization via presets and custom background color for chroma keying."
+authors = ["Andrew Chan (dowinterfor6)"]
 license = ""
 repository = ""
 default-run = "app"
