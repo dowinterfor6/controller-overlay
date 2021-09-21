@@ -9,9 +9,9 @@
     "frontend-build": "npm run build --prefix controller-overlay-core",
     "tauri": "tauri",
     "debug": "RUST_DEBUG=1 tauri dev",
-    "dev": "tauri dev",
-    "debug-build": "tauri build -- --debug",
-    "build": "tauri build"
+    "dev": "npm run tauri dev",
+    "debug-build": "npm run tauri build -- --debug",
+    "build": "npm run tauri build"
   },
   "repository": {
     "type": "git",
