@@ -1,5 +1,5 @@
 [package]
-name = "Controller_Overlay"
+name = "app"
 version = "0.1.0"
 description = "A controller overlay application that displays button presses and joystick movement. Allows for theme customization via presets and custom background color for chroma keying."
 authors = ["Andrew Chan (dowinterfor6)"]
